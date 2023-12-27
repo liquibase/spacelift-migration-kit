@@ -1,6 +1,5 @@
 .terraform
 terraform.tfstate*
-*.tfvars
 !*.example.tfvars
 /generator.tftpl
 /out
