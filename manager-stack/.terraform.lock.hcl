@@ -6,6 +6,7 @@ provider "registry.terraform.io/spacelift-io/spacelift" {
   constraints = "~> 1.0"
   hashes = [
     "h1:/1q/1KQR62Cq1J6BpYZx48mdr80WL8oHFlbTzmnEHQA=",
+    "h1:e94FFjUQDoYTOSq5qv3Q82NZpqEc2B65EUUvzu831Rk=",
     "zh:52e36d8f6269278af57be64eac1e794eacddcf0402a53197f5cb141a66535f99",
     "zh:601d7f4a6a494863d12cf562fc05809a94269cc13e13e268b89df08c4dab62db",
     "zh:78b3fd7db23fd2d91c7f2f465a91232faa7c04796dc3d5119251cf5d3e19ccc3",
