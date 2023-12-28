@@ -2,16 +2,15 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/spacelift-io/spacelift" {
-  version     = "1.1.6"
+  version     = "1.8.0"
   constraints = "~> 1.0"
   hashes = [
-    "h1:/1q/1KQR62Cq1J6BpYZx48mdr80WL8oHFlbTzmnEHQA=",
-    "h1:e94FFjUQDoYTOSq5qv3Q82NZpqEc2B65EUUvzu831Rk=",
-    "zh:52e36d8f6269278af57be64eac1e794eacddcf0402a53197f5cb141a66535f99",
-    "zh:601d7f4a6a494863d12cf562fc05809a94269cc13e13e268b89df08c4dab62db",
-    "zh:78b3fd7db23fd2d91c7f2f465a91232faa7c04796dc3d5119251cf5d3e19ccc3",
-    "zh:8f1cc224634f93adbc712dd817b4ce7021355e08bf0933932083cc4042c24585",
-    "zh:90ba8b231292c35430e46312dcebc97063e1b9953c8645a293676e02e33fb7b6",
-    "zh:dea3ef8667b0d202f6d27803abb7c376f940d1e0bbb94d5e69d1178bb27df5f5",
+    "h1:DZJD5G1VC6oYQKY88crOs79vQN44vd8XPXjbWGhpE24=",
+    "zh:226d4c5bc6acb70852a47ee13ba030b6dbd5801720c746d904e4a07d3e4197af",
+    "zh:8981d4c5ed050c62effd33c1a485187a86fc6bc6d701c9430c93d8ae38a1cab3",
+    "zh:c535d272bb8a428b597f62b0f818e49cda2b272d20e494495d1a8beecadf121b",
+    "zh:f33230deebde158ac40b5541d3996a9c84e9ea3d28b790ebf1a27c881841476c",
+    "zh:f7117fc91a1cd4b33afd5cb1c433fa8c2aeec2bfe9a045cb5903c1aef039d35c",
+    "zh:ffc64caff5ac4c574651f1abe9209dfbce536c4003fb8b3a19762ef5f9f5841e",
   ]
 }
