@@ -1,8 +1,8 @@
 # Name of the manager stack
-stack_name = "Spacelift Manager"
+stack_name = "Liquibase Spacelift Manager"
 
 # Description for the stack
-stack_description = "Spacelift resources manager"
+stack_description = "Liquibase Spacelift resources manager"
 
 # Name of your GitHub Enterprise organisation or GitHub account
 # namespace = "change-me-to-your-organisation-or-account-name"
@@ -17,7 +17,7 @@ branch = "main"
 project_root = ""
 
 # Import the Terraform state for the managed stacks into Spacelift?
-import_state = true
+import_state = false
 
 # Spacelift API endpoint - Alternatively, you could pass that value via the SPACELIFT_API_KEY_ENDPOINT env var
 spacelift_api_key_endpoint = "https://liquibase.app.spacelift.io"

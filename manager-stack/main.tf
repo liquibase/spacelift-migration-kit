@@ -21,7 +21,7 @@ locals {
   state_files = var.import_state ? fileset("../out/state-files", "*.tfstate") : []
 }
 
-resource "spacelift_stack" "manager" {
+resource "spacelift_stack" "liquibase_manager" {
   administrative = true
   branch         = var.branch
   description    = var.stack_description
@@ -35,8 +35,8 @@ resource "spacelift_stack" "manager" {
   # }
 }
 
-resource "spacelift_run" "manager" {
-  stack_id = spacelift_stack.manager.id
+resource "spacelift_run" "liquibase_manager" {
+  stack_id = spacelift_stack.liquibase_manager.id
 
   keepers = {
     # Trigger a run when "import_state" variable changes to facilitate
@@ -45,10 +45,10 @@ resource "spacelift_run" "manager" {
   }
 }
 
-resource "spacelift_mounted_file" "state_file" {
+resource "spacelift_mounted_file" "liquibase_state_file" {
   for_each = local.state_files
 
   content       = filebase64("../out/state-files/${each.value}")
   relative_path = "state-import/${each.value}"
-  stack_id      = spacelift_stack.manager.id
+  stack_id      = spacelift_stack.liquibase_manager.id
 }
